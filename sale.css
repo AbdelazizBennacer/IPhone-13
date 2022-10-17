@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden; /*اذا خرجت حاجه يرا اطار اخفيها*/
+    position: relative;
+
+}
+header{
+    display: flex;  /*حطهم*/
+    justify-content: space-between; /*يحط وحده يمين لخرا شمال*/
+    align-items: center; /*وضع عناصر على حط واحد*/
+    width: 80%; /*حش من مساحه*/
+    margin: auto; /*حطها فالنص*/
+    padding: 20px 0;
+}
+.logo{
+    width: 40px;
+   
+}
+ul li{
+    display: inline-block; /*يحول لبلوك لي انلاين*/
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{ 
+    width: 40%;
+    color: #fff;
+}
+.content .text h2{ 
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+
+}
+.content .text a{
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    padding:8px 15px;
+    border-radius: 20px;
+}
+.content .image{
+    width: 30%;
+}
+.content .image img{
+    width: 180px;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.icons img{
+    width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
